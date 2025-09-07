@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🍳 Interactive Recipe Finder</h1>
+        <p>Enter ingredients you have (comma separated):</p>
+        <input type="text" id="ingredients" placeholder="e.g. tomato, cheese, pasta">
+        <button onclick="getRecipes()">Find Recipes</button>
+
+        <h2>🔍 Search History</h2>
+        <button id="clearBtn" onclick="clearHistory()">Clear All History</button>
+        <ul id="history"></ul>
+
+        <div id="recipes" class="recipes"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
